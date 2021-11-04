@@ -1,24 +1,26 @@
 import React from 'react';
-// import { Menubar, Container, NavDropdown} from 'react-bootstrap';
-// import Navbar from 'react-bootstrap/Navbar';
-import { Navbar, Nav } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import Container from 'react-bootstrap/Container'
+import Button from 'react-bootstrap/Button'
 
 const Menu = props => {
     return(
-        <Navbar bg="primary" expand="sm">
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-                <Nav.Link href="#">HOME</Nav.Link>
-                <Nav.Link href="#">ABOUT</Nav.Link>
-                <Nav.Link href="#">SKILLS</Nav.Link>
-                <Nav.Link href="#">PROJECTS</Nav.Link>
-                <Nav.Link href="#">EXPERIENCE</Nav.Link>
-                <Nav.Link href="#">EDUCATION</Nav.Link>
-                <Nav.Link href="#">CONTACT</Nav.Link>
-            </Nav>
-            </Navbar.Collapse>
+        <Navbar bg="primary" expand="sm"  sticky="top">
+            <Container fluid>
+                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="m-auto">
+                    <Nav.Link href="#"><small>About</small></Nav.Link>
+                    <Nav.Link href="#"><small>Skill</small></Nav.Link>
+                    <Nav.Link href="#"><small>Project</small></Nav.Link>
+                    <Nav.Link href="#"><small>Experience</small></Nav.Link>
+                    <Nav.Link href="#"><small>Education</small></Nav.Link>
+                    <Nav.Link href="#"><small>Contact</small></Nav.Link>
+                    <Button variant="outline-success" size="sm" >Resume</Button>
+                </Nav>
+                </Navbar.Collapse>
+            </Container>
         </Navbar>
 
     );
