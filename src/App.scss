@@ -2,6 +2,7 @@
 @import "~bootstrap/scss/bootstrap";
 
 .App {
+  text-align: center;
   // background-color: $background-color;
   // color: $text-white;
 }
@@ -17,6 +18,11 @@
   color: white;
 }
 
+// // // // // // // // // // // // // // // HEADER// // // // // // // // // // // // // // //
 small {
   color: $text-slate;
+}
+
+.nav-btn {
+  background-color: red;
 }

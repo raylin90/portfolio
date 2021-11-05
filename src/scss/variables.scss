@@ -13,6 +13,9 @@ $body-color: #a8b2d1;  //this is the text color
 $body-bg: #0A192F; //this is the background color
 $gray-900: purple;
 
-
+:export {
+    text-slate: $text-slate;
+    background-color: $background-color;
+}
 // import bootstrap stylesheet
 @import "~bootstrap/scss/bootstrap";

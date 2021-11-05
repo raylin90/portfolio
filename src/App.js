@@ -1,12 +1,22 @@
 import './App.scss';
-import Menu from './components/Menu';
-import Main from './views/Main';
-import Container from 'react-bootstrap/Container'
+import Header from './components/Header';
+import About from './components/About';
+import Skill from './components/Skill';
+import Project from './components/Project';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
 function App() {
   return (
     <div className="App">
-      <Menu/>
-      <Main/>
+      <Header/>
+      <About/>
+      <Skill/>
+      <Project/>
+      <Experience/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
